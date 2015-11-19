@@ -29,6 +29,8 @@ public class COMSC_1033_HW_10_MathGame_2B {
 
 	public static void main(String[] args) {
 
+		char [] operators = {'+', '-', 'X', '/'}; // Initialize array of operators.
+
 		player_1.setScore(0);	// Initialize score
 		player_1.setRightAnswers(0); // Initialize the number of correct answers
 		player_1.setWrongAnswers(0); // Initialize the number of wrong answers
@@ -51,24 +53,11 @@ public class COMSC_1033_HW_10_MathGame_2B {
 		+ " get the answer within 0.001\n to be considered correct.");
 
 // Start the four rounds of math problems for the operators +, - , X, and /.
-		// Addition round
-		mathOperator = '+';
-		player_1.setLevel(1); // Initialize level to one for the addition rounds
-		RoundControl();
-		// Subtraction round
-		mathOperator = '-';
-		player_1.setLevel(1); // Initialize level to one for the subtraction rounds
-		RoundControl();
-		// Multiplication round
-		mathOperator = 'X';
-		player_1.setLevel(1); // Initialize level to one for multiplication rounds
-		RoundControl();
-
-		// Division round
-		mathOperator = '/';
-		player_1.setLevel(1); // Initialize level to one for the division rounds
-		RoundControl();
-
+		for (int i=0; i<=3; i++){
+			mathOperator = operators[i];
+			player_1.setLevel(1); // Initialize level to one for the addition rounds
+			RoundControl();
+		}
 
 // Print out the final results of the game.
 		System.out.printf("\n\n***************************************************"
@@ -281,4 +270,4 @@ public class COMSC_1033_HW_10_MathGame_2B {
 			player_1.getLevel());
 	} // End of printRoundHeader.
 
-} // **************** End of COMSC_1033_HW_9_Math_Game_2 class ********
+} // **************** End of COMSC_1033_HW_10_MathGame_2B class ********
