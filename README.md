@@ -593,7 +593,7 @@ Harry your final score is 30 points and you answered 68.8% of
 the questions correctly.
 ```
 
-The Git-SCM software was used to track the source code during the development of the programming project and GitHub was used as the remote repository server for the project. The program was working so a branch off of the master was started called development. The code was modified to use a character array to hold the math operators and then iterate through the array in a FOR loop to control the program flow. Once the code was modified and working on the development branch the development branch was merged into master and the changes where pushed to the remote server on GitHub. Using GitHub allowed the project to be reviewed by other programmers during the development process and their input was used to correct any errors. The git commands used in the git Bash sheel are below.
+The Git-SCM software was used to track the source code during the development of the programming project and GitHub was used as the remote repository server for the project. The program was working so a branch off of the master was started called development. The code was modified to use a character array to hold the math operators and then iterate through the array in a FOR loop to control the program flow. Once the code was modified and working on the development branch the development branch was merged into master and the changes where pushed to the remote server on GitHub. Using GitHub allowed the project to be reviewed by other programmers during the development process and their input was used to correct any errors. The git commands used in the git Bash shell are below.
 
 ```
 *********************** Date 11/18/15
