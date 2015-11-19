@@ -14,7 +14,7 @@ The Git-SCM was used to track the project during development and it proved to be
 
 
 # Homework Assignment Number 10
-This homework assignment is to write a program and use the Git-SCM to track program development. The programing problem is to modify the math game program from homework 6 to use methods, for loops, and arrays. Since the solution used for homework 6 already uses methods and for loops the program was modified to generate four rounds each of addition, subtraction, multiplication, and division problems. The player will receive points for each correct answer and they will lose points for incorrect answers. Each time the player answers correctly the difficulty of the problems will be increased and if they answer incorrectly the difficulty of the problems will be decreased. When the type of math problem is changed the difficulty level is reset to 1 to start the next set problems. The code for the program solution is below in three code sections, one for each of the java files. Following the code sections is some sample output for the program. The programming solution is also available on GitHub at           (https://github.com/MDobrinski/COMSC_1033_HW_9_Math_Game_2/releases/). The release used for the homework assignment is v1.0.0.
+This homework assignment is to write a program and use the Git-SCM to track program development. The programing problem is to modify the math game program from homework 6 to use methods, for loops, and arrays. Since the solution used for homework 6 already uses methods and for loops the program was modified to generate four rounds each of addition, subtraction, multiplication, and division problems. The player will receive points for each correct answer and they will lose points for incorrect answers. Each time the player answers correctly the difficulty of the problems will be increased and if they answer incorrectly the difficulty of the problems will be decreased. When the type of math problem is changed the difficulty level is reset to 1 to start the next set problems. The code for the program solution is below in three code sections, one for each of the java files. Following the code sections is some sample output for the program. The programming solution is also available on GitHub at           (https://github.com/MDobrinski/COMSC_1033_HW_10_MathGame_2B-src.git).
 
 The program consists of three classes, COMSC_1033_HW_9_Math_Game_2.java, Player.java, and MyRandoms.java. The file COMSC_1033_HW_9_Math_Game_2 .java contains the main method as well as four other methods. The Player.java file contains the methods needed to create Player objects used in the main program and the MyRandoms.java file contains methods used to generate various random numbers.
 
@@ -593,10 +593,129 @@ Harry your final score is 30 points and you answered 68.8% of
 the questions correctly.
 ```
 
-The Git-SCM software was used to track the source code during the development of the programming project and GitHub was used as the remote repository server for the project. The program was working so a branch off of the master was started called development. The code was modified to use a character array to hold the math operators and then iterate through the array in a FOR loop to control the program flow. Once the code was modified and working on the development branch the development branch was merged into master and the changes where pushed to the remote server on GitHub. Using GitHub allowed the project to be reviewed by other programmers during the development process and their input was used to correct any errors. 
+The Git-SCM software was used to track the source code during the development of the programming project and GitHub was used as the remote repository server for the project. The program was working so a branch off of the master was started called development. The code was modified to use a character array to hold the math operators and then iterate through the array in a FOR loop to control the program flow. Once the code was modified and working on the development branch the development branch was merged into master and the changes where pushed to the remote server on GitHub. Using GitHub allowed the project to be reviewed by other programmers during the development process and their input was used to correct any errors. The git commands used in the git Bash sheel are below.
+
+```
+*********************** Date 11/18/15
+
+mdobrinski@LT-WEA-0023 MINGW32 /e/COMSC_1033/Programs
+$ cd COMSC_1033_HW_10_MathGame_2B/src/
+
+mdobrinski@LT-WEA-0023 MINGW32 /e/COMSC_1033/Programs/COMSC_1033_HW_10_MathGame_2B/src
+$ git init
+Initialized empty Git repository in E:/COMSC_1033/Programs/COMSC_1033_HW_10_MathGame_2B/src/.git/
+
+mdobrinski@LT-WEA-0023 MINGW32 /e/COMSC_1033/Programs/COMSC_1033_HW_10_MathGame_2B/src (master)
+$ git status
+On branch master
+
+Initial commit
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        COMSC_1033_HW_10_MathGame_2B.java
+        MyRandoms.java
+        Player.java
+        README.md
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+mdobrinski@LT-WEA-0023 MINGW32 /e/COMSC_1033/Programs/COMSC_1033_HW_10_MathGame_2B/src (master)
+$ git add .
+
+mdobrinski@LT-WEA-0023 MINGW32 /e/COMSC_1033/Programs/COMSC_1033_HW_10_MathGame_2B/src (master)
+$ git commit -m"Initial commit of imported project files."
+[master (root-commit) c7d446a] Initial commit of imported project files.
+ 4 files changed, 1033 insertions(+)
+ create mode 100644 COMSC_1033_HW_10_MathGame_2B.java
+ create mode 100644 MyRandoms.java
+ create mode 100644 Player.java
+ create mode 100644 README.md
+
+mdobrinski@LT-WEA-0023 MINGW32 /e/COMSC_1033/Programs/COMSC_1033_HW_10_MathGame_2B/src (master)
+$ ^C
+
+mdobrinski@LT-WEA-0023 MINGW32 /e/COMSC_1033/Programs/COMSC_1033_HW_10_MathGame_2B/src (master)
+$ git remote add origin https://github.com/MDobrinski/COMSC_1033_HW_10_MathGame_2B-src.git
+
+mdobrinski@LT-WEA-0023 MINGW32 /e/COMSC_1033/Programs/COMSC_1033_HW_10_MathGame_2B/src (master)
+$ git push -u origin master
+Username for 'https://github.com': MDobrinski
+Password for 'https://MDobrinski@github.com':
+Counting objects: 6, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (6/6), done.
+Writing objects: 100% (6/6), 11.82 KiB | 0 bytes/s, done.
+Total 6 (delta 0), reused 0 (delta 0)
+To https://github.com/MDobrinski/COMSC_1033_HW_10_MathGame_2B-src.git
+ * [new branch]      master -> master
+Branch master set up to track remote branch master from origin.
+
+mdobrinski@LT-WEA-0023 MINGW32 /e/COMSC_1033/Programs/COMSC_1033_HW_10_MathGame_2B/src (master)
+
+ *********************** Date 11/19/15
+
+mdobrinski@LT-WEA-0023 MINGW32 /e/COMSC_1033/Programs/COMSC_1033_HW_10_MathGame_2B/src (master)
+$ git checkout -b development
+Switched to a new branch 'development'
+
+mdobrinski@LT-WEA-0023 MINGW32 /e/COMSC_1033/Programs/COMSC_1033_HW_10_MathGame_2B/src (development)
+$ git status
+On branch development
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+        modified:   COMSC_1033_HW_10_MathGame_2B.java
+        modified:   README.md
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+mdobrinski@LT-WEA-0023 MINGW32 /e/COMSC_1033/Programs/COMSC_1033_HW_10_MathGame_2B/src (development)
+$ git commit -am"Add character array to the main method along with a FOR loop. Updated README.MD"
+[development 43e542c] Add character array to the main method along with a FOR loop. Updated README.MD
+ 2 files changed, 70 insertions(+), 91 deletions(-)
+
+mdobrinski@LT-WEA-0023 MINGW32 /e/COMSC_1033/Programs/COMSC_1033_HW_10_MathGame_2B/src (development)
+$ git push -u origin development
+Username for 'https://github.com': MDobrinski
+Password for 'https://MDobrinski@github.com':
+Counting objects: 4, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (4/4), 1.55 KiB | 0 bytes/s, done.
+Total 4 (delta 3), reused 0 (delta 0)
+To https://github.com/MDobrinski/COMSC_1033_HW_10_MathGame_2B-src.git
+ * [new branch]      development -> development
+Branch development set up to track remote branch development from origin.
+
+mdobrinski@LT-WEA-0023 MINGW32 /e/COMSC_1033/Programs/COMSC_1033_HW_10_MathGame_2B/src (development)
+$ git checkout master
+Switched to branch 'master'
+Your branch is up-to-date with 'origin/master'.
+
+mdobrinski@LT-WEA-0023 MINGW32 /e/COMSC_1033/Programs/COMSC_1033_HW_10_MathGame_2B/src (master)
+$ git merge development
+Updating c7d446a..43e542c
+Fast-forward
+ COMSC_1033_HW_10_MathGame_2B.java |  27 +++-----
+ README.md                         | 134 ++++++++++++++++++--------------------
+ 2 files changed, 70 insertions(+), 91 deletions(-)
+
+mdobrinski@LT-WEA-0023 MINGW32 /e/COMSC_1033/Programs/COMSC_1033_HW_10_MathGame_2B/src (master)
+$ git push
+Username for 'https://github.com': MDobrinski
+Password for 'https://MDobrinski@github.com':
+Total 0 (delta 0), reused 0 (delta 0)
+To https://github.com/MDobrinski/COMSC_1033_HW_10_MathGame_2B-src.git
+   c7d446a..43e542c  master -> master
+
+mdobrinski@LT-WEA-0023 MINGW32 /e/COMSC_1033/Programs/COMSC_1033_HW_10_MathGame_2B/src (master)
+$
+
+```
 
 After the program was working correctly it was decided to move some of the functionality out of the single class and into separate classes with the development of the Player and MyRandoms classes. The writing of these classes was done on the development branch which was merged into the master branch as the use of the classes became functional in the program. 
  
-The current release for this programming project at the time this report is being written is v1.0.0 and a link to the project is included at the beginning of the report.
-
 This programming problem has given the opportunity to use a number of program control constructs including the SWITCH – CASE construct, DO – WHILE loop, FOR loop, and IF – ELSE construct. The Math.random method provided in the Java utilities was also used. This project was such that object and method classes could be written and used effectively, allowing for their use in future programs. Numerical input from the user is contained in a TRY block and any InputMismatchExceptions will be handled in the CATCH block. The Git-SCM system was a valuable tool used during the writing of this programming project as well as GitHub for a central repository server.
